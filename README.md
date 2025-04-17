@@ -7,8 +7,8 @@ This project provides a backend service that connects to the TAO.app API, enabli
 Follow these steps to connect this backend as a data source in OpenBB Pro:
 
 1.  Log in to your OpenBB Pro account at [pro.openbb.co](https://pro.openbb.co). (Register if you don't have an account yet).
-2.  Navigate to the **Data Connectors** page: [pro.openbb.co/app](https://pro.openbb.co/app).
-3.  Click the **+ Add Data** button.
+2.  Navigate to the **Data Connectors** page: [pro.openbb.co/app](pro.openbb.co/app/data-connectors?modal=data-connectors&dcTab=backend).
+3.  Click the **+ Add Data** button. 
 4.  Select **Custom Backend** from the left sidebar menu.
 5.  Fill in the following details:
     *   **Name**: `TAO.app backend`
