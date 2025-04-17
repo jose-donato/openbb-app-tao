@@ -28,14 +28,14 @@ tao.get("/subnet_screener", async (c) => {
 		const priceData = await taoApiCall(c.env.TAO_API_KEY, "/api/beta/current");
 		const taoPrice = priceData.price;
 
-		if (currency === "TAO") {
-			return c.json(data);
-		}
 		const convertedData = data.map((item) => ({
 			...item,
-			price: item.price * taoPrice,
-			market_cap_tao: item.market_cap_tao * taoPrice,
-			fdv_tao: item.fdv_tao * taoPrice,
+			price: currency === "TAO" ? item.price : item.price * taoPrice,
+			market_cap_tao:
+				currency === "TAO"
+					? item.market_cap_tao
+					: item.market_cap_tao * taoPrice,
+			fdv_tao: currency === "TAO" ? item.fdv_tao : item.fdv_tao * taoPrice,
 			netuid: `SN${item.netuid} ${item.subnet_name}`,
 		}));
 		return c.json(convertedData);

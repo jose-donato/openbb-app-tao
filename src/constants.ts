@@ -164,7 +164,6 @@ export const WIDGETS = {
 						field: "price",
 						headerName: "Price",
 						cellDataType: "number",
-						formatterFn: "normalized",
 						width: 100,
 					},
 					{
