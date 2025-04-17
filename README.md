@@ -18,7 +18,7 @@ Follow these steps to connect this backend as a data source in OpenBB Pro:
 
 Once added, you should be able to find the `TAO app` available in the **Templates** section of OpenBB Workspace.
 
-<img width="1726" alt="image" src="https://github.com/user-attachments/assets/a188694e-b775-4bcb-93ad-9e670615c68c" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/a188694e-b775-4bcb-93ad-9e670615c68c" />
 
 ## Running locally
 
