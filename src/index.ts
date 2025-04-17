@@ -1,10 +1,19 @@
 import { Hono } from "hono";
+import { cache } from "hono/cache";
 import { cors } from "hono/cors";
 import { TEMPLATES, WIDGETS } from "./constants";
 import tao from "./routes/tao";
 import taoUdf from "./routes/taoudf";
 
 const app = new Hono().use(cors());
+
+app.get(
+	"*",
+	cache({
+		cacheName: "openbb-app-tao",
+		cacheControl: "max-age=3600", // 1 hour
+	}),
+);
 
 app.get("/", (c) => {
 	return c.text("OpenBB Workspace App - tao.app");
