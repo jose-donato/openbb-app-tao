@@ -1,5 +1,7 @@
 # TAO.app Backend
 
+⚠️ there are some issues when connecting to tao.app api from USA
+
 This project provides a backend service that connects to the TAO.app API, enabling the integration of TAO/Bittensor on-chain analytics and price data into OpenBB Workspace. It defines templates and widgets for visualizing this data within the OpenBB Workspace interface.
 
 ## Connecting to OpenBB Pro
